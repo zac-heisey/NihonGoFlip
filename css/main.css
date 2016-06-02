@@ -1,0 +1,11 @@
+/*** Global Custom Styles (Mobile-first) ***/
+
+header h1 {
+  color: green;
+  font-size: 3em;
+  font-family: Helvetica, sans-serif;
+}
+
+header h3 {
+  font-family: cursive;
+}
