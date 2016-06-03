@@ -14,11 +14,11 @@ header h3 {
 
 /* Main Navigation */
 
-nav > ul > li {
+nav li {
   list-style: none;
 }
 
-nav > li > a {
+nav li > a {
   color: orange;
   text-decoration: none;
 }
