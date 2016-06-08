@@ -1,5 +1,9 @@
 /*** Global Custom Styles (Mobile-first) ***/
 
+body {
+  margin: 0;
+}
+
 /* Header Section */
 
 header h1 {
@@ -21,4 +25,10 @@ nav li {
 nav li > a {
   color: orange;
   text-decoration: none;
+}
+
+nav ul {
+  background-color: blue;
+  padding: 0;
+  width: 50%;
 }
