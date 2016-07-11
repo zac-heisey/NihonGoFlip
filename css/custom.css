@@ -1,0 +1,24 @@
+/* === Global Resets === */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+} /* universal box sizing > includes padding and border, but NOT margin, in total box size */
+
+/* >> These resets are covered in _base.scss <<
+html, body, div,
+ol, ul, li,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+} /* removes margin & padding from all browsers */
+
+ol, ul {
+  list-style: none;
+} /* removes bullets & numbers from all lists */
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+} /* removes underline from all link states */
+
+
+/* === Global Styles (Mobile-first) === */
