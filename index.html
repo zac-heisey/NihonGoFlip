@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html lang="en-us">
+---
+layout: default
+---
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NihonGoFlip</title>
-    <meta name="description" content="NihonGoFlip is a fun, visually interactive way to learn Hiragana and Katakana on the web. Best of all, it's totally free!">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+<div class="home">
 
-  <body>
-    <header>
-      <h1>Welcome to NihonGoFlip</h1>
-      <h3>A fun, visually interactive way to learn Japanese!</h3>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- This is a single line HTML comment -->
-    <h1>This is My First Heading</h1>
-    <p>This is some text.</p>
-    <p>And this is a <a href="#">link</a>.</p>
-    <p>You can also check out the <a href="/about.html">About page</a>.</p>
-    <ul>
-      <li>List Item 1</li>
-      <li>List Item 2</li>
-      <li>List Item 3</li>
-    </ul>
-  </body>
+  <h1 class="page-heading">Posts</h1>
 
-</html>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
