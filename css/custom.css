@@ -22,3 +22,7 @@ a:link, a:visited, a:hover, a:active {
 
 
 /* === Global Styles (Mobile-first) === */
+
+.post-content {
+  height: 100vh;
+}
