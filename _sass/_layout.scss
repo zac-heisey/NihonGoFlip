@@ -98,8 +98,11 @@
  * Site footer
  */
 .site-footer {
+    width: 100%;
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit / 2 0;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-heading {
@@ -117,6 +120,8 @@
     font-size: 15px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
+    display: flex;
+    justify-content: space-between;
     @extend %clearfix;
 }
 
@@ -124,6 +129,7 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+    flex-grow: 1;
 }
 
 .footer-col-1 {
@@ -155,6 +161,10 @@
 }
 
 @include media-query($on-palm) {
+    .footer-col-wrapper {
+        flex-direction: column;
+    }
+
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
