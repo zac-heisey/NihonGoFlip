@@ -100,7 +100,7 @@
 .site-footer {
     width: 100%;
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit / 2 0;
+    padding: 1% 0;
     position: fixed;
     bottom: 0;
 }
@@ -127,7 +127,6 @@
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
     flex-grow: 1;
 }
