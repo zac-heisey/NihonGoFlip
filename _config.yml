@@ -10,7 +10,7 @@ title: NihonGoFlip
 email: zheisey@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   NihonGoFlip is a fun, visually interactive way to learn Hiragana and
-  Katakana on the web. Best of all, it's totlly free!
+  Katakana on the web. Best of all, it's totally free!
 baseurl: "/NihonGoFlip" # the subpath of your site, e.g. /blog
 url: "http://zac-heisey.github.io" # the base hostname & protocol for your site
 twitter_username: zac_heisey
