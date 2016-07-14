@@ -160,6 +160,7 @@ pre {
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 4));
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
