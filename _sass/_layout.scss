@@ -101,6 +101,10 @@
     padding: 1% 0;
     position: fixed;
     bottom: 0;
+
+    @include media-query(650px) {
+      position: relative;
+    }
 }
 
 .footer-heading {
