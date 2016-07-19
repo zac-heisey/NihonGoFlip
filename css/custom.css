@@ -43,7 +43,7 @@ body {
 /* Flex Container styles */
 .flex-container {
   padding: 0;
-  margin: 0;
+  margin: 1% 0;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
