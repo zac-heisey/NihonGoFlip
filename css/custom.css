@@ -21,7 +21,7 @@ a:link, a:visited, a:hover, a:active {
 } /* removes underline from all link states */
 
 
-/* === Global Styles (Mobile-first) === */
+/* === Global Styles === */
 
 body {
   height: 100vh;
@@ -31,14 +31,14 @@ body {
 
 
 
-/* === Header Styles (Mobile-first) === */
+/* === Header Styles === */
 
 
 
 
 
 
-/* === Main Content Styles (Mobile-first) === */
+/* === Main Content Styles === */
 
 /* Flex Container styles */
 .flex-container {
@@ -74,4 +74,5 @@ body {
 
 
 
-/* === Footer Styles (Mobile-first) === */
+
+/* === Footer Styles === */
