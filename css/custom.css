@@ -1,4 +1,4 @@
-/* === Global Resets === */
+/* ========== Global Resets ========== */
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ a:link, a:visited, a:hover, a:active {
 } /* removes underline from all link states */
 
 
-/* === Global Styles === */
+/* ========== Global Styles ========== */
 
 body {
   height: 100vh;
@@ -31,14 +31,20 @@ body {
 
 
 
-/* === Header Styles === */
+/* ========== Header Styles ========== */
+
+/* Line break for NihonGoFlip heading on small screens */
+@media screen and (max-width: 460px) {
+  .site-title span {
+    display: block;
+    line-height: 0;
+  }
+}
 
 
 
 
-
-
-/* === Main Content Styles === */
+/* ========== Main Content Styles ========== */
 
 /* Flex Container styles */
 .flex-container {
@@ -67,24 +73,12 @@ body {
   border-radius: 10px;
 }
 
-.container-row-2 li {
-  background: blue;
-}
-
-.container-row-3 li {
-  background: yellow;
-}
-
-.container-row-4 li {
-  background: purple;
-}
-
-.container-row-5 li {
-  background: green;
+#hide-li {
+  visibility: hidden;
 }
 
 
 
 
 
-/* === Footer Styles === */
+/* ========== Footer Styles ========== */
