@@ -51,14 +51,14 @@ body {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;;
 }
 
 .flex-item {
   background: tomato;
   width: 50px;
   height: 50px;
-  margin-top: 10px;
+  margin-top: 30px;
   line-height: 50px;
   color: white;
   font-weight: bold;
@@ -67,8 +67,20 @@ body {
   border-radius: 10px;
 }
 
-.container-row-1 li {
+.container-row-2 li {
   background: blue;
+}
+
+.container-row-3 li {
+  background: yellow;
+}
+
+.container-row-4 li {
+  background: purple;
+}
+
+.container-row-5 li {
+  background: green;
 }
 
 
