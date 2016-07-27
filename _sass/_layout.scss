@@ -118,24 +118,38 @@
 }
 
 .footer-col {
-    float: left;
     padding-left: $spacing-unit / 2;
     flex-grow: 1;
 }
 
 .footer-col-1 {
+    text-align: left;
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
 }
 
 .footer-col-2 {
+    text-align: right;
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
     width:         calc(20% - (#{$spacing-unit} / 2));
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
 }
 
 .footer-col-3 {
+    text-align: right;
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
 }
 
 @include media-query($on-laptop) {
