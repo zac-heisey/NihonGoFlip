@@ -77,7 +77,7 @@ body {
   visibility: hidden;
 }
 
-/* Flex Item Color styles */
+/* a-column color styles */
 .a-column-a {
   background-color: rgba(51, 255, 255, 0.7);
 }
@@ -98,6 +98,7 @@ body {
   background-color: rgba(51, 51, 255, 0.7);
 }
 
+/* ka-column color styles */
 .ka-column-ka {
   background-color: rgba(102, 204, 153, 0.7);
 }
@@ -118,6 +119,7 @@ body {
   background-color: rgba(102, 0, 153, 0.7);
 }
 
+/* sa-column color styles */
 .sa-column-sa {
   background-color: rgba(255, 204, 204, 0.7);
 }
@@ -138,8 +140,137 @@ body {
   background-color: rgba(255, 0, 204, 0.7);
 }
 
+/* ta-column color styles */
+.ta-column-ta {
+  background-color: rgba(204, 204, 102, 0.7);
+}
 
+.ta-column-chi {
+  background-color: rgba(204, 153, 102, 0.7);
+}
 
+.ta-column-tsu {
+  background-color: rgba(204, 102, 102, 0.7);
+}
+
+.ta-column-te {
+  background-color: rgba(204, 51, 204, 0.7);
+}
+
+.ta-column-to {
+  background-color: rgba(204, 0, 102, 0.7);
+}
+
+/* na-column color styles */
+.na-column-na {
+  background-color: rgba(102, 255, 102, 0.7);
+}
+
+.na-column-ni {
+  background-color: rgba(102, 204, 102, 0.7);
+}
+
+.na-column-nu {
+  background-color: rgba(102, 153, 102, 0.7);
+}
+
+.na-column-ne {
+  background-color: rgba(102, 102, 102, 0.7);
+}
+
+.na-column-no {
+  background-color: rgba(102, 51, 102, 0.7);
+}
+
+/* ha-column color styles */
+.ha-column-ha {
+  background-color: rgba(153, 204, 255, 0.7);
+}
+
+.ha-column-hi {
+  background-color: rgba(153, 153, 255, 0.7);
+}
+
+.ha-column-fu {
+  background-color: rgba(153, 102, 255, 0.7);
+}
+
+.ha-column-he {
+  background-color: rgba(153, 51, 255, 0.7);
+}
+
+.ha-column-ho {
+  background-color: rgba(153, 0, 255, 0.7);
+}
+
+/* ma-column color styles */
+.ma-column-ma {
+  background-color: rgba(102, 255, 204, 0.7);
+}
+
+.ma-column-mi {
+  background-color: rgba(102, 204, 204, 0.7);
+}
+
+.ma-column-mu {
+  background-color: rgba(102, 153, 204, 0.7);
+}
+
+.ma-column-me {
+  background-color: rgba(102, 102, 204, 0.7);
+}
+
+.ma-column-mo {
+  background-color: rgba(102, 51, 204, 0.7);
+}
+
+/* ya-column color styles */
+.ya-column-ya {
+  background-color: rgba(255, 204, 255, 0.7);
+}
+
+.ya-column-yu {
+  background-color: rgba(255, 102, 255, 0.7);
+}
+
+.ya-column-yo {
+  background-color: rgba(255, 0, 255, 0.7);
+}
+
+/* ra-column color styles */
+.ra-column-ra {
+  background-color: rgba(255, 204, 102, 0.7);
+}
+
+.ra-column-ri {
+  background-color: rgba(255, 153, 102, 0.7);
+}
+
+.ra-column-ru {
+  background-color: rgba(255, 102, 102, 0.7);
+}
+
+.ra-column-re {
+  background-color: rgba(255, 51, 102, 0.7);
+}
+
+.ra-column-ro {
+  background-color: rgba(255, 0, 102, 0.7);
+}
+
+/* wa-column color styles */
+.wa-column-wa {
+  background-color: rgba(51, 204, 102, 0.7);
+}
+
+.wa-column-wo {
+  background-color: rgba(51, 102, 120, 0.7);
+}
+
+/* n-column color styles */
+.n-column-n {
+  background-color: rgba(255, 204, 0, 0.7);
+}
 
 
 /* ========== Footer Styles ========== */
