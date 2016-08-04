@@ -3,10 +3,9 @@ $('.hiragana').hide();
 $('.katakana').hide();
 
 // Flip/toggle Hiragana characters
-$('.flex-container > li').on('click', function() {
+$('li').on('click', function() {
   $(this).addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
     $(this).removeClass('animated flipOutY');
-    $('.n-column-n.eigo').hide();
-    $('.n-column-n.hiragana').show().addClass('animated flipInY');
+    $('.n-column-n.hiragana, .n-column-n.eigo').toggle().addClass('animated flipInY');
   });
 });
