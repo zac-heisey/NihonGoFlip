@@ -6,8 +6,10 @@ $('.katakana').hide();
 $('#hiragana-trigger').on('click', function() {
   $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
     $('li').removeClass('animated flipOutY');
-    $('li').addClass('animated flipInY');
-    $('.eigo, .hiragana').toggle();
+  });
+  $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $('li').removeClass('animated flipInY');
+    $('.hiragana, .eigo').toggle();
   });
 });
 
