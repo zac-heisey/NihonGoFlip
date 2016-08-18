@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Hiragana
-permalink: /hiragana/
+permalink: /#hiragana/
 ---
