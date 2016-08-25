@@ -13,6 +13,17 @@ $('#hiragana-trigger').on('click', function() {
   });
 });
 
+// Flip/toggle ALL Katakana characters
+$('#katakana-trigger').on('click', function() {
+  $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $('li').removeClass('animated flipOutY');
+  });
+  $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $('li').removeClass('animated flipInY');
+    $('.katakana, .eigo').toggle();
+  });
+});
+
 /*
 Flip/toggle INDIVIDUAL Hiragana characters -> Still working on this...
 $('li').on('click', function() {
