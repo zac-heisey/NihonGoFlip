@@ -26,6 +26,13 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        border-bottom: 3px solid transparent;
+        transition: 0.5s ease;
+
+        &:hover {
+          border-bottom: 3px solid $brand-color;
+          padding-bottom: 5px;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
