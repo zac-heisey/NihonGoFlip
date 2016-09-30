@@ -5,42 +5,30 @@ $('.katakana').hide();
 // Flip/toggle ALL Hiragana characters
 $('#hiragana-trigger').on('click', function() {
   if ($('.katakana').is(':visible')) {
-    $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipOutY');
-    });
     $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $('li').removeClass('animated flipInY');
+    });
       $('.katakana, .hiragana').toggle();
-    });
   } else {
-    $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipOutY');
-    });
     $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $('li').removeClass('animated flipInY');
-      $('.hiragana, .eigo').toggle();
     });
+      $('.hiragana, .eigo').toggle();
   }
 });
 
 // Flip/toggle ALL Katakana characters
 $('#katakana-trigger').on('click', function() {
   if ($('.hiragana').is(':visible')) {
-    $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipOutY');
-    });
     $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $('li').removeClass('animated flipInY');
+    });
       $('.hiragana, .katakana').toggle();
-    });
   } else {
-    $('li').addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipOutY');
-    });
     $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $('li').removeClass('animated flipInY');
-      $('.katakana, .eigo').toggle();
     });
+      $('.katakana, .eigo').toggle();
   }
 });
 
