@@ -39,8 +39,6 @@ body {
 }
 
 
-
-
 /* ========== Main Content Styles ========== */
 
 /* Flex Container styles */
@@ -267,5 +265,27 @@ body {
   background-color: rgba(255, 204, 0, 0.7);
 }
 
+/* Main div & li item rotation on smaller screens */
+@media screen and (max-width: 700px) {
+  main {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  li.flex-item {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .trigger {
+    margin-bottom: 100px;
+  }
+}
 
 /* ========== Footer Styles ========== */
