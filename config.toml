@@ -1,6 +1,6 @@
 # Site settings
 title = "NihonGoFlip | Learn Hiragana & Katakana Online"
-baseURL = "/nihongoflip" # the subpath of your site, e.g. /blog
+baseURL = "/nihongoflip" # Hostname (and path) to the root, e.g. http://bep.is/
 languageCode = "en-us"
 email = "zheisey@gmail.com"
 description = "NihonGoFlip is a fun, visually interactive way to learn Hiragana and Katakana on the web. Best of all, it's totally free!"
