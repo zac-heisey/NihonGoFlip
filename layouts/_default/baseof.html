@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {{ partial "head.html" }}
 
   <body>
 
-    {% include header.html %}
+    {{ partial "header.html" }}
 
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}
+        {{ block "main" . }}{{ end }}
       </div>
     </div>
 
-    {% include footer.html %}
+    {{ partial "footer.html" }}
 
   </body>
 

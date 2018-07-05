@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">NihonGoFlip<span style="color:#fff">//</span>日本語のフリップ</a>
+    <a class="site-title" href="{{ .Site.baseURL }}/">NihonGoFlip<span style="color:#fff">//</span>日本語のフリップ</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,8 +14,8 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" id="hiragana-trigger" href="{{ "/#hiragana" | prepend: site.baseurl }}">Hiragana</a>
-        <a class="page-link" id="katakana-trigger" href="{{ "/#katakana" | prepend: site.baseurl }}">Katakana</a>
+        <a class="page-link" id="hiragana-trigger" href="{{ "/#hiragana" | absURL }}">Hiragana</a>
+        <a class="page-link" id="katakana-trigger" href="{{ "/#katakana" | absURL }}">Katakana</a>
       </div>
     </nav>
 
