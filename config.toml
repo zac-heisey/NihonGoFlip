@@ -1,6 +1,6 @@
 # Site settings
 title = "NihonGoFlip | Learn Hiragana & Katakana Online"
-baseURL = "/nihongoflip" # Hostname (and path) to the root, e.g. http://bep.is/
+baseURL = "" # Hostname (and path) to the root, e.g. http://bep.is/
 languageCode = "en-us"
 
 [params]
