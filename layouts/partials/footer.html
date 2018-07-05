@@ -9,11 +9,11 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        {{ if isset .Site.Params.github_username }}
+        {{ if .Site.Params.github_username }}
         <p>{{ partial "icon-github.html" }}<br>
         {{ end }}
 
-        {{ if isset .Site.Params.twitter_username }}
+        {{ if .Site.Params.twitter_username }}
         {{ partial "icon-twitter.html" }}</p>
         {{ end }}
       </div>
