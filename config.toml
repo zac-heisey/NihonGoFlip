@@ -2,7 +2,9 @@
 title = "NihonGoFlip | Learn Hiragana & Katakana Online"
 baseURL = "/nihongoflip" # Hostname (and path) to the root, e.g. http://bep.is/
 languageCode = "en-us"
-email = "zheisey@gmail.com"
-description = "NihonGoFlip is a fun, visually interactive way to learn Hiragana and Katakana on the web. Best of all, it's totally free!"
-twitter_username = "zac_heisey"
-github_username = "zac-heisey"
+
+[params]
+  email = "zheisey@gmail.com"
+  description = "NihonGoFlip is a fun, visually interactive way to learn Hiragana and Katakana on the web. Best of all, it's totally free!"
+  twitter_username = "zac_heisey"
+  github_username = "zac-heisey"
