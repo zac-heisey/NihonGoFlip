@@ -1,5 +1,4 @@
----
-layout: page
-title: Hiragana
-permalink: /#hiragana/
----
++++
+title = "Hiragana"
+permalink = "/#hiragana/"
++++
