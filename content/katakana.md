@@ -1,5 +1,4 @@
----
-layout: page
-title: Katakana
-permalink: /#katakana/
----
++++
+title: "Katakana"
+permalink = "/#katakana/""
++++
