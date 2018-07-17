@@ -1,4 +1,4 @@
 +++
 title = "Katakana"
-permalink = "/#katakana/""
+permalink = "/#katakana/"
 +++
