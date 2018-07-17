@@ -1,4 +1,4 @@
 +++
-title: "Katakana"
+title = "Katakana"
 permalink = "/#katakana/""
 +++
