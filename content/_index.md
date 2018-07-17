@@ -1,3 +1,6 @@
++++
+title = "Home"
++++
 <main>
   <!-- Flex Container Start -->
   <ul class="flex-container container-row-1">
