@@ -143,7 +143,7 @@ pre > code  {
 @media screen and (max-width: 800px)  {
      .wrapper  {
      max-width:  -webkit-calc(100% - (5%));
-     max-width:  calc(100% - (5%));
+     /* max-width:  calc(100% - (5%)); */
      padding-right:  5%;
      padding-left:  5%;
  }
@@ -223,7 +223,7 @@ body  {
      display:  -ms-flexbox;
      display:  -webkit-flex;
      display:  flex;
-     -webkit-flex-flow:  row wrap;
+     /* -webkit-flex-flow:  row wrap; */
      justify-content:  space-between;
  }
 
@@ -488,13 +488,13 @@ body  {
 
 /* Main div & li item rotation on smaller screens */
 @media screen and (max-width: 700px)  {
-     main  {
+  main  {
      -webkit-transform:  rotate(-90deg);
      -moz-transform:  rotate(-90deg);
      -o-transform:  rotate(-90deg);
      -ms-transform:  rotate(-90deg);
      transform:  rotate(-90deg);
- }
+  }
 
   li.flex-item  {
      -webkit-transform:  rotate(90deg);
@@ -502,7 +502,7 @@ body  {
      -o-transform:  rotate(90deg);
      -ms-transform:  rotate(90deg);
      transform:  rotate(90deg);
- }
+  }
 
   .trigger  {
      margin-bottom:  100px;
@@ -645,34 +645,16 @@ body  {
      width:  calc(35% - (5% / 2));
  }
 
-@media screen and (max-width: 600px)  {
-     .footer-col-1  {
-     text-align:  center;
- }
- }
-
 .footer-col-2  {
      text-align:  right;
      width:  -webkit-calc(20% - (5% / 2));
      width:  calc(20% - (5% / 2));
  }
 
-@media screen and (max-width: 600px)  {
-     .footer-col-2  {
-     text-align:  center;
- }
- }
-
 .footer-col-3  {
      text-align:  right;
      width:  -webkit-calc(45% - (5% / 2));
      width:  calc(45% - (5% / 2));
- }
-
-@media screen and (max-width: 600px)  {
-     .footer-col-3  {
-     text-align:  center;
- }
  }
 
 @media screen and (max-width: 800px)  {
@@ -686,6 +668,7 @@ body  {
      width:  calc(100% - (5% / 2));
  }
  }
+
 @media screen and (max-width: 600px)  {
      .footer-col-wrapper  {
      flex-direction:  column;
@@ -695,6 +678,10 @@ body  {
      float:  none;
      width:  -webkit-calc(100% - (5% / 2));
      width:  calc(100% - (5% / 2));
+ }
+
+  .footer-col-1, .footer-col-2, .footer-col-3  {
+    text-align: center;
  }
  }
 /** Page content */
