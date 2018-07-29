@@ -199,12 +199,15 @@ a:link,  a:visited,  a:hover,  a:active  {
 
 /* removes underline from all link states */
 /* ========== Global Styles ========== */
-body  {
-     height:  100vh;
- }
+html, body {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-/* ========== Header Styles ========== */
 /* Line break for NihonGoFlip heading on small screens */
 @media screen and (max-width: 460px)  {
      .site-title span  {
@@ -212,7 +215,7 @@ body  {
      line-height:  0;
  }
  }
-/* ========== Main Content Styles ========== */
+
 /* Flex Container styles */
 .flex-container  {
      padding:  0;
@@ -508,7 +511,7 @@ body  {
      margin-bottom:  100px;
  }
  }
-/* ========== Footer Styles ========== */
+
 /** Site header */
 .site-header  {
      min-height:  56px;
@@ -600,18 +603,11 @@ body  {
  }
 
 /** Site footer */
-.site-footer  {
-     width:  100%;
-     padding:  1% 0;
-     position:  fixed;
-     bottom:  0;
- }
-
-@media screen and (max-width: 650px)  {
-     .site-footer  {
-     position:  relative;
- }
- }
+.site-footer {
+  width: 100%;
+  padding: 1% 0;
+  flex-shrink: 0;
+}
 
 .footer-heading  {
      font-size:  18px;
@@ -685,8 +681,9 @@ body  {
  }
  }
 /** Page content */
-.page-content  {
-     /* main page content styles here */ }
+.page-content {
+  flex: 1 0 auto;
+}
 
 .page-heading  {
      font-size:  20px;
