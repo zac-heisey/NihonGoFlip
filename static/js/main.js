@@ -32,12 +32,17 @@ $('#katakana-trigger').on('click', function() {
   }
 });
 
-/*
-Flip/toggle INDIVIDUAL Hiragana characters -> Still working on this...
-$('li').on('click', function() {
-  $(this).addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    $(this).removeClass('animated flipOutY');
-    $('.n-column-n.hiragana, .n-column-n.eigo').toggle().addClass('animated flipInY');
-  });
-});
-*/
+// Flip/toggle individual characters -> Still working on this...
+// $('li').on('click', function() {
+//   if ($('.katakana').is(':visible')) {
+//     $(this).addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+//       $(this).removeClass('animated flipInY');
+//     });
+//       $(this).toggleClass('katakana');
+//   } else {
+//     $(this).addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+//       $(this).removeClass('animated flipInY');
+//     });
+//       $('.hiragana, .eigo').toggle();
+//   }
+// });
