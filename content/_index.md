@@ -64,8 +64,8 @@ title = "Home"
     <li class="flex-item ka-column-ki hiragana">き</li>
     <li class="flex-item ka-column-ki katakana">キ</li>
     <li class="flex-item a-column-i eigo">i</li>
-    <li class="flex-item a-column-i katakana">い</li>
-    <li class="flex-item a-column-i hiragana">イ</li>
+    <li class="flex-item a-column-i katakana">イ</li>
+    <li class="flex-item a-column-i hiragana">い</li>
   </ul>
   <ul class="flex-container container-row-3">
     <li class="flex-item n-column hide-li">HIDE</li>
