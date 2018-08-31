@@ -38,12 +38,16 @@ Flip/toggle individual characters -> Still working on this...
 
 // Select all <li> flex items (i.e. character squares) -> Returns a NodeList
 var listItems = document.querySelectorAll('li.flex-item');
-var hiragana = document.querySelectorAll('.hiragana');
-var katakana = document.querySelectorAll('.katakana');
 
 // Loop through NodeList items -> Add click event listener to individual items -> Add animate.css classes
 for (var i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener('click', function () {
     this.classList.add('animated', 'flipInY');
+    // Set timeout to remove 'animated' and 'flipInY' classes -> Refactor redundant for() loop below?
+    setTimeout(function() {
+      for (var i = 0; i < listItems.length; i++) {
+        listItems[i].classList.remove('animated', 'flipInY');
+      }
+    }, 1000);
   }, false);
 }
