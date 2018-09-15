@@ -542,11 +542,11 @@ body {
 .site-nav .page-link  {
      color:  #fff;
      line-height:  1.5;
-     border-bottom:  3px solid transparent;
      transition:  0.5s ease;
  }
 
-.site-nav .page-link:hover  {
+.site-nav .page-link:hover,
+.active  {
      border-bottom:  3px solid #2ddbd6;
      padding-bottom:  5px;
  }
