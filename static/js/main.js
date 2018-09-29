@@ -37,7 +37,7 @@ Flip/toggle individual characters -> Still working on this...
 ***/
 
 // Listen for all clicks on the document
-document.addEventListener('click', function() {
+document.addEventListener('click', function(event) {
   // Bail if the click is NOT on a page menu link (Hiragana or Katakana)
   if (!event.target.classList.contains('page-link')) return;
   // Add .active class
