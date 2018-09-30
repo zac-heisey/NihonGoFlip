@@ -27,7 +27,7 @@ document.addEventListener('click', function(event) {
         if (listItems[i] === event.target) {
           listItems[i].classList.add('animated', 'flipInY');
           /* If URL path includes 'hiragana' and the clicked character is eigo
-          (Refactor redundant if...else if statements) */
+          (refactor redundant if...else if statements) */
           if (window.location.href.includes('hiragana') && listItems[i].classList.contains('eigo')) {
             listItems[i].classList.remove('animated', 'flipInY');
             listItems[i].setAttribute('hidden', '');
@@ -40,7 +40,7 @@ document.addEventListener('click', function(event) {
             listItems[i-1].classList.add('animated', 'flipInY');
           }
           /* If URL path includes 'katakana' and the clicked character is eigo
-          (Refactor redundant if...else if statements) */
+          (refactor redundant if...else if statements) */
           if (window.location.href.includes('katakana') && listItems[i].classList.contains('eigo')) {
             listItems[i].classList.remove('animated', 'flipInY');
             listItems[i].setAttribute('hidden', '');
@@ -55,7 +55,7 @@ document.addEventListener('click', function(event) {
         }
       }
     }, 10);
-    // End timout function (creates smooth flip transition)
+    // End timeout function (creates smooth flip transition)
   }
 
 }, false);
