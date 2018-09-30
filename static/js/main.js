@@ -1,7 +1,3 @@
-/***
-Flip/toggle individual characters -> Still working on this...
-***/
-
 // Get page menu links (Hiragana or Katakana)
 var pageLinks = document.querySelectorAll('.page-link');
 // Get all <li> flex-items -> Returns a NodeList
@@ -24,44 +20,42 @@ document.addEventListener('click', function(event) {
   }
   // If click is on an <li> flex-item (i.e. character squares)
   if (event.target.classList.contains('flex-item')) {
-    // Loop through NodeList items -> Add animate.css classes
-    for (var i = 0; i < listItems.length; i++) {
-      if (listItems[i] === event.target) {
-        listItems[i].classList.add('animated', 'flipInY');
-      }
-      // Set timeout to remove 'animated' and 'flipInY' classes -> Refactor redundant for() loop below?
-      setTimeout(function() {
-        for (var i = 0; i < listItems.length; i++) {
-          if (listItems[i] === event.target) {
-            // If URL path includes 'hiragana' and the clicked character is eigo
-            if (window.location.href.includes('hiragana') && listItems[i].classList.contains('eigo')) {
-              listItems[i].classList.remove('animated', 'flipInY');
-              listItems[i].setAttribute('hidden', '');
-              listItems[i+1].removeAttribute('hidden');
-              listItems[i+1].classList.add('animated', 'flipInY');
-            } else if (listItems[i].classList.contains('hiragana')) {
-              listItems[i].classList.remove('animated', 'flipInY');
-              listItems[i].setAttribute('hidden', '');
-              listItems[i-1].removeAttribute('hidden');
-              listItems[i-1].classList.add('animated', 'flipInY');
-            }
-            // If URL path includes 'katakana' and the clicked character is eigo
-            if (window.location.href.includes('katakana') && listItems[i].classList.contains('eigo')) {
-              listItems[i].classList.remove('animated', 'flipInY');
-              listItems[i].setAttribute('hidden', '');
-              listItems[i+2].removeAttribute('hidden');
-              listItems[i+2].classList.add('animated', 'flipInY');
-            } else if (listItems[i].classList.contains('katakana')) {
-              listItems[i].classList.remove('animated', 'flipInY');
-              listItems[i].setAttribute('hidden', '');
-              listItems[i-2].removeAttribute('hidden');
-              listItems[i-2].classList.add('animated', 'flipInY');
-            }
+    // Set timeout to remove 'animated' and 'flipInY' classes
+    setTimeout(function() {
+      // Loop through NodeList items -> Add animate.css classes
+      for (var i = 0; i < listItems.length; i++) {
+        if (listItems[i] === event.target) {
+          listItems[i].classList.add('animated', 'flipInY');
+          /* If URL path includes 'hiragana' and the clicked character is eigo
+          (Refactor redundant if...else if statements) */
+          if (window.location.href.includes('hiragana') && listItems[i].classList.contains('eigo')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i+1].removeAttribute('hidden');
+            listItems[i+1].classList.add('animated', 'flipInY');
+          } else if (listItems[i].classList.contains('hiragana')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i-1].removeAttribute('hidden');
+            listItems[i-1].classList.add('animated', 'flipInY');
+          }
+          /* If URL path includes 'katakana' and the clicked character is eigo
+          (Refactor redundant if...else if statements) */
+          if (window.location.href.includes('katakana') && listItems[i].classList.contains('eigo')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i+2].removeAttribute('hidden');
+            listItems[i+2].classList.add('animated', 'flipInY');
+          } else if (listItems[i].classList.contains('katakana')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i-2].removeAttribute('hidden');
+            listItems[i-2].classList.add('animated', 'flipInY');
           }
         }
-      }, 10);
-      // End timout function (creates smooth flip transition)
-    }
+      }
+    }, 10);
+    // End timout function (creates smooth flip transition)
   }
 
 }, false);
