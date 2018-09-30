@@ -54,7 +54,7 @@ document.addEventListener('click', function(event) {
 }, false);
 
 // Select all <li> flex items (i.e. character squares) -> Returns a NodeList
-var listItems = document.querySelectorAll('li.flex-item');
+var listItems = document.querySelectorAll('.flex-item');
 
 // Loop through NodeList items -> Add click event listener to individual items -> Add animate.css classes
 for (var i = 0; i < listItems.length; i++) {
