@@ -1,43 +1,61 @@
-// Hide Hiragana and Katakana characters
-$('.hiragana').hide();
-$('.katakana').hide();
+// Get page menu links (Hiragana or Katakana)
+var pageLinks = document.querySelectorAll('.page-link');
+// Get all <li> flex-items -> Returns a NodeList
+var listItems = document.querySelectorAll('.flex-item');
 
-// Flip/toggle ALL Hiragana characters
-$('#hiragana-trigger').on('click', function() {
-  if ($('.katakana').is(':visible')) {
-    $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipInY');
-    });
-      $('.katakana, .hiragana').toggle();
-  } else {
-    $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipInY');
-    });
-      $('.hiragana, .eigo').toggle();
+// Listen for all clicks on the document
+document.addEventListener('click', function(event) {
+
+  // If click is on a page menu link (Hiragana or Katakana)
+  if (event.target.classList.contains('page-link')) {
+    // Add .active class
+    event.target.classList.add('active');
+    // Loop through each link
+    for (var i = 0; i < pageLinks.length; i++) {
+      // If the link is the one clicked, skip it
+      if (pageLinks[i] === event.target) continue;
+      // Remove .active class
+      pageLinks[i].classList.remove('active');
+    }
   }
-});
-
-// Flip/toggle ALL Katakana characters
-$('#katakana-trigger').on('click', function() {
-  if ($('.hiragana').is(':visible')) {
-    $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipInY');
-    });
-      $('.hiragana, .katakana').toggle();
-  } else {
-    $('li').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('li').removeClass('animated flipInY');
-    });
-      $('.katakana, .eigo').toggle();
+  // If click is on an <li> flex-item (i.e. character squares)
+  if (event.target.classList.contains('flex-item')) {
+    // Set timeout to remove 'animated' and 'flipInY' classes
+    setTimeout(function() {
+      // Loop through NodeList items -> Add animate.css classes
+      for (var i = 0; i < listItems.length; i++) {
+        if (listItems[i] === event.target) {
+          listItems[i].classList.add('animated', 'flipInY');
+          /* If URL path includes 'hiragana' and the clicked character is eigo
+          (refactor redundant if...else if statements) */
+          if (window.location.href.includes('hiragana') && listItems[i].classList.contains('eigo')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i+1].removeAttribute('hidden');
+            listItems[i+1].classList.add('animated', 'flipInY');
+          } else if (listItems[i].classList.contains('hiragana')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i-1].removeAttribute('hidden');
+            listItems[i-1].classList.add('animated', 'flipInY');
+          }
+          /* If URL path includes 'katakana' and the clicked character is eigo
+          (refactor redundant if...else if statements) */
+          if (window.location.href.includes('katakana') && listItems[i].classList.contains('eigo')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i+2].removeAttribute('hidden');
+            listItems[i+2].classList.add('animated', 'flipInY');
+          } else if (listItems[i].classList.contains('katakana')) {
+            listItems[i].classList.remove('animated', 'flipInY');
+            listItems[i].setAttribute('hidden', '');
+            listItems[i-2].removeAttribute('hidden');
+            listItems[i-2].classList.add('animated', 'flipInY');
+          }
+        }
+      }
+    }, 10);
+    // End timeout function (creates smooth flip transition)
   }
-});
 
-/*
-Flip/toggle INDIVIDUAL Hiragana characters -> Still working on this...
-$('li').on('click', function() {
-  $(this).addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    $(this).removeClass('animated flipOutY');
-    $('.n-column-n.hiragana, .n-column-n.eigo').toggle().addClass('animated flipInY');
-  });
-});
-*/
+}, false);
