@@ -23,7 +23,7 @@ document.addEventListener('click', function(event) {
     // Set timeout to remove 'animated' and 'flipInY' classes
     setTimeout(function() {
       // Loop through NodeList items -> Add animate.css classes
-      for (var i = 0; i < listItems.length; i++) {
+      Array.from(listItems).forEach(function(i) {
         if (listItems[i] === event.target) {
           listItems[i].classList.add('animated', 'flipInY');
           /* If URL path includes 'hiragana' and the clicked character is eigo
@@ -53,7 +53,7 @@ document.addEventListener('click', function(event) {
             listItems[i-2].classList.add('animated', 'flipInY');
           }
         }
-      }
+      });
     }, 10);
     // End timeout function (creates smooth flip transition)
   }
