@@ -228,6 +228,7 @@ body {
      display:  flex;
      /* -webkit-flex-flow:  row wrap; */
      justify-content:  space-between;
+     cursor: pointer; /* Allow for mobile/tablet clicks to register on non-interactive elements (i.e. li items) */
  }
 
 
