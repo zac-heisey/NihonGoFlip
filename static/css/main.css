@@ -140,15 +140,6 @@ pre > code  {
      text-align:  center;
  }
 
-@media screen and (max-width: 800px)  {
-     .wrapper  {
-     max-width:  -webkit-calc(100% - (5%));
-     /* max-width:  calc(100% - (5%)); */
-     padding-right:  5%;
-     padding-left:  5%;
- }
- }
-
 /** Clearfix */
 .wrapper:after,  .footer-col-wrapper:after  {
      content:  "";
@@ -208,14 +199,6 @@ body {
   flex-direction: column;
 }
 
-/* Line break for NihonGoFlip heading on small screens */
-@media screen and (max-width: 460px)  {
-     .site-title span  {
-     display:  block;
-     line-height:  0;
- }
- }
-
 /* Flex Container styles */
 .flex-container  {
      padding:  0;
@@ -226,7 +209,6 @@ body {
      display:  -ms-flexbox;
      display:  -webkit-flex;
      display:  flex;
-     /* -webkit-flex-flow:  row wrap; */
      justify-content:  space-between;
      cursor: pointer; /* Allow for mobile/tablet clicks to register on non-interactive elements (i.e. li items) */
  }
@@ -489,32 +471,6 @@ body {
      background-color:  rgba(255,  204,  0,  0.7);
  }
 
-
-/* Main div & li item rotation on smaller screens */
-@media screen and (max-width: 700px)  {
-  main  {
-     -webkit-transform:  rotate(-90deg);
-     -moz-transform:  rotate(-90deg);
-     -o-transform:  rotate(-90deg);
-     -ms-transform:  rotate(-90deg);
-     transform:  rotate(-90deg);
-  }
-
-  li.flex-item  {
-     -webkit-transform:  rotate(90deg);
-     -moz-transform:  rotate(90deg);
-     -o-transform:  rotate(90deg);
-     -ms-transform:  rotate(90deg);
-     transform:  rotate(90deg);
-     min-width: 50px;
-     min-height: 50px;
-  }
-
-  .trigger  {
-     margin-bottom:  100px;
- }
- }
-
 /** Site header */
 .site-header  {
      min-height:  56px;
@@ -554,55 +510,6 @@ body {
 
 .site-nav .page-link:not(:last-child)  {
      margin-right:  20px;
- }
-
-@media screen and (max-width: 600px)  {
-     .site-nav  {
-     position:  absolute;
-     top:  9px;
-     right:  2.5%;
-     background-color:  #4b4b4b;
-     text-align:  right;
- }
-
-  .site-nav .menu-icon  {
-     display:  block;
-     float:  right;
-     width:  36px;
-     height:  26px;
-     line-height:  0;
-     padding-top:  6px;
-     text-align:  center;
- }
-
-  .site-nav .menu-icon > svg  {
-     width:  18px;
-     height:  15px;
- }
-
-  .site-nav .menu-icon > svg path  {
-     fill:  #2ddbd6;
- }
-
-  .site-nav .trigger  {
-     clear:  both;
-     display:  none;
- }
-
-  .site-nav:hover .trigger  {
-     display:  block;
-     padding-bottom:  5px;
- }
-
-  .site-nav .page-link  {
-     display:  block;
-     padding:  5px 10px;
-     margin-left:  20px;
- }
-
-  .site-nav .page-link:not(:last-child)  {
-     margin-right:  0;
- }
  }
 
 /** Site footer */
@@ -656,33 +563,6 @@ body {
      width:  calc(45% - (5% / 2));
  }
 
-@media screen and (max-width: 800px)  {
-     .footer-col-1,  .footer-col-2  {
-     width:  -webkit-calc(50% - (5% / 2));
-     width:  calc(50% - (5% / 2));
- }
-
-  .footer-col-3  {
-     width:  -webkit-calc(100% - (5% / 2));
-     width:  calc(100% - (5% / 2));
- }
- }
-
-@media screen and (max-width: 600px)  {
-     .footer-col-wrapper  {
-     flex-direction:  column;
- }
-
-  .footer-col  {
-     float:  none;
-     width:  -webkit-calc(100% - (5% / 2));
-     width:  calc(100% - (5% / 2));
- }
-
-  .footer-col-1, .footer-col-2, .footer-col-3  {
-    text-align: center;
- }
- }
 /** Page content */
 .page-content {
   flex: 1 0 auto;
@@ -727,42 +607,12 @@ body {
      line-height:  1;
  }
 
-@media screen and (max-width: 800px)  {
-     .post-title  {
-     font-size:  36px;
- }
- }
-
 .post-content  {
      margin-bottom:  5%;
  }
 
 .post-content h2  {
      font-size:  32px;
- }
-
-@media screen and (max-width: 800px)  {
-     .post-content h2  {
-     font-size:  28px;
- }
- }
-.post-content h3  {
-     font-size:  26px;
- }
-
-@media screen and (max-width: 800px)  {
-     .post-content h3  {
-     font-size:  22px;
- }
- }
-.post-content h4  {
-     font-size:  20px;
- }
-
-@media screen and (max-width: 800px)  {
-     .post-content h4  {
-     font-size:  18px;
- }
  }
 
 /** Syntax highlighting styles */
@@ -1024,3 +874,123 @@ body {
 .highlight .il  {
      color:  #099;
  }
+
+/** Media Queries */
+
+@media screen and (max-width: 500px) {
+
+  .site-title {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 600px)  {
+
+  .footer-col-wrapper  {
+    flex-direction:  column;
+  }
+
+  .footer-col  {
+    float:  none;
+    width:  -webkit-calc(100% - (5% / 2));
+    width:  calc(100% - (5% / 2));
+  }
+
+  .footer-col-1, .footer-col-2, .footer-col-3  {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 700px)  {
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-container  {
+    flex-direction: column-reverse;
+  }
+
+  .trigger  {
+    margin-bottom: 100px;
+  }
+
+  .site-nav  {
+    position: absolute;
+    top: 9px;
+    right: 2.5%;
+    background-color: #4b4b4b;
+    text-align: right;
+  }
+
+  .site-nav .menu-icon  {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 6px;
+    text-align: center;
+  }
+
+  .site-nav .menu-icon > svg  {
+    width: 18px;
+    height: 15px;
+  }
+
+  .site-nav .menu-icon > svg path  {
+    fill: #2ddbd6;
+  }
+
+  .site-nav .trigger  {
+    clear: both;
+    display: none;
+  }
+
+  .site-nav:hover .trigger  {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .site-nav .page-link  {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+
+  .site-nav .page-link:not(:last-child)  {
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 800px)  {
+
+  .wrapper  {
+    max-width: -webkit-calc(100% - (5%));
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .footer-col-1,  .footer-col-2  {
+    width: -webkit-calc(50% - (5% / 2));
+    width: calc(50% - (5% / 2));
+  }
+
+  .footer-col-3  {
+    width: -webkit-calc(100% - (5% / 2));
+    width: calc(100% - (5% / 2));
+  }
+
+  .post-title  {
+    font-size:  36px;
+  }
+
+  .post-content h2  {
+    font-size:  28px;
+  }
+
+}
