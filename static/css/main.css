@@ -516,7 +516,6 @@ body {
 .site-footer {
   width: 100%;
   padding: 1% 0;
-  flex-shrink: 0;
 }
 
 .footer-heading  {
@@ -975,22 +974,16 @@ body {
     padding-left: 5%;
   }
 
-  .footer-col-1,  .footer-col-2  {
-    width: -webkit-calc(50% - (5% / 2));
-    width: calc(50% - (5% / 2));
-  }
-
-  .footer-col-3  {
-    width: -webkit-calc(100% - (5% / 2));
-    width: calc(100% - (5% / 2));
-  }
-
   .post-title  {
     font-size:  36px;
   }
 
   .post-content h2  {
     font-size:  28px;
+  }
+
+  .site-footer {
+    margin-top: 2rem;
   }
 
 }
